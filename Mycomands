@@ -85,4 +85,6 @@ install -------------------------
 ----------------- EP7 Improving the admin user interface -----------
 11- -- php artisan route:list
 
+----------------- EP8 Laravel assign roles to users ----------------
+
 12- 
