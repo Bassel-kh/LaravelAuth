@@ -132,5 +132,30 @@ install -------------------------
 
             OK (4 tests, 5 assertions)
 
+----------------- EP14 Adding foreign key constraints --------------
+use bigIncrements instand of interger in file (database\migrations\2020_06_15_045912_create_role_user_table.php)
+    -- php artisan migrate:rollback
+        Rolling back: 2020_06_15_045912_create_role_user_table
+        Rolled back:  2020_06_15_045912_create_role_user_table (0.06 seconds)
+        Rolling back: 2020_06_15_045415_create_roles_table
+        Rolled back:  2020_06_15_045415_create_roles_table (0.01 seconds)
 
+    -- php artisan migrate
+        Migrating: 2020_06_15_045415_create_roles_table
+        Migrated:  2020_06_15_045415_create_roles_table (0.03 seconds)
+        Migrating: 2020_06_15_045912_create_role_user_table
+        Migrated:  2020_06_15_045912_create_role_user_table (0.01 seconds)
+    
+    -- php artisan db:seed
+        Seeding: RolesTableSeeder
+        Seeded:  RolesTableSeeder (0.08 seconds)
+        Seeding: UsersTableSeeder
+        Seeded:  UsersTableSeeder (0.54 seconds)
+        Database seeding completed successfully.
 
+15- -- php artisan make:migration create_foreign_keys_for_role_user_table
+        Created Migration: 2020_06_15_143650_create_foreign_keys_for_role_user_table
+
+    -- php artisan migrate
+        Migrating: 2020_06_15_143650_create_foreign_keys_for_role_user_table
+        Migrated:  2020_06_15_143650_create_foreign_keys_for_role_user_table (0.1 seconds)
