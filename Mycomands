@@ -9,7 +9,7 @@ install -------------------------
 
 --------------------------------------
 
-1- php artisan migrate
+1- -- php artisan migrate
 
 2- create a user's controller that admins can access and
     this will allow them to edit the users in the system 
@@ -17,7 +17,7 @@ install -------------------------
        
         -- php artisan make:controller \\Admin\\UsersController -r -mUser
 
-3- php artisan route:list
+3- -- php artisan route:list
 
             +--------+-----------+-------------------------+------------------+------------------------------------------------------------------------+------------+
             | Domain | Method    | URI                     | Name             | Action                                                                 | Middleware |
@@ -49,4 +49,20 @@ install -------------------------
             |        | GET|HEAD  | register                | register         | App\Http\Controllers\Auth\RegisterController@showRegistrationForm      | web        |
             |        |           |                         |                  |                                                                        | guest      |
             +--------+-----------+-------------------------+------------------+------------------------------------------------------------------------+------------+
-4- 
+4-  Create Role Model 
+    -m creates migrate for us
+    -- php artisan make:model Role -m
+            Model created successfully.
+            Created Migration: 2020_06_15_045415_create_roles_table
+
+5- -- php artisan make:migration create_role_user_table
+        Created Migration: 2020_06_15_045912_create_role_user_table
+        contain (role ID and user ID)
+
+6- --php artisan migrate
+        Migrating: 2020_06_15_045415_create_roles_table
+        Migrated:  2020_06_15_045415_create_roles_table (0.03 seconds)
+        Migrating: 2020_06_15_045912_create_role_user_table
+        Migrated:  2020_06_15_045912_create_role_user_table (0.02 seconds)
+    
+7- set the relatioships
