@@ -81,3 +81,8 @@ install -------------------------
         Seeding: UsersTableSeeder
         Seeded:  UsersTableSeeder (0.39 seconds)
         Database seeding completed successfully.
+
+----------------- EP7 Improving the admin user interface -----------
+11- -- php artisan route:list
+
+12- 
