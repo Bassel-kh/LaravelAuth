@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    // public function index(Request $request)
+    // {
+    //     $request->session()->flash('success', 'testing success flash message');
+    //     $request->session()->flash('warning', 'testing warning flash message');
+    //     $request->session()->flash('error', 'testing error flash message');
+
+    //     return view('home');
+    // }
+
 }

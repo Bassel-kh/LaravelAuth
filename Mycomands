@@ -164,5 +164,8 @@ use bigIncrements instand of interger in file (database\migrations\2020_06_15_04
     foreign key check add to database\seeds\DatabaseSeeder.php:
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
             DB::statement('SET FOREIGN_KEY_CHECKS=1;');
-            
+
     -- php artisan db:seed
+
+------------------ EP15 Create a notification system --------------
+17- 
