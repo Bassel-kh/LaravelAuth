@@ -93,4 +93,6 @@ install -------------------------
 12- -- php artisan db:seed 
 
 ----------------- EP11 Improving our user update form --------------
+
+----------------- EP12 Assign a role to a user when registering ----
 13- 
