@@ -95,4 +95,42 @@ install -------------------------
 ----------------- EP11 Improving our user update form --------------
 
 ----------------- EP12 Assign a role to a user when registering ----
-13- 
+
+----------------- EP13 Basic feature test introduction -------------
+
+13- -- php artisan make:test LoginPageTest
+            Test created successfully. tests\Feature\LoginPageTest.php
+    
+    --   vendor\bin\phpunit
+            PHPUnit 8.5.5 by Sebastian Bergmann and contributors.
+
+                ...                                   3 / 3 (100%)
+
+                Time: 723 ms, Memory: 20.00 MB
+
+                OK (3 tests, 3 assertions)
+14- -- php artisan make:test UserRedirectedWithNoLogin
+            Test created successfully.
+    
+    --  vendor\bin\phpunit
+            PHPUnit 8.5.5 by Sebastian Bergmann and contributors.
+
+            ...                                                                 3 / 3 (100%)
+
+            Time: 522 ms, Memory: 20.00 MB
+
+            OK (3 tests, 3 assertions)
+
+    after rename UserRedirectedWithNoLogin to----> UserRedirectedWithNoLoginTest
+
+    --  vendor\bin\phpunit
+            PHPUnit 8.5.5 by Sebastian Bergmann and contributors.
+
+            ....                                                                4 / 4 (100%)
+
+            Time: 537 ms, Memory: 20.00 MB
+
+            OK (4 tests, 5 assertions)
+
+
+
