@@ -159,3 +159,10 @@ use bigIncrements instand of interger in file (database\migrations\2020_06_15_04
     -- php artisan migrate
         Migrating: 2020_06_15_143650_create_foreign_keys_for_role_user_table
         Migrated:  2020_06_15_143650_create_foreign_keys_for_role_user_table (0.1 seconds)
+
+16- solve foreign key problem
+    foreign key check add to database\seeds\DatabaseSeeder.php:
+            DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+            DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+            
+    -- php artisan db:seed
