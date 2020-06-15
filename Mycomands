@@ -66,3 +66,18 @@ install -------------------------
         Migrated:  2020_06_15_045912_create_role_user_table (0.02 seconds)
     
 7- set the relatioships
+
+----------------- Seed the roles and users tables -----------------
+8- -- php artisan make:seed RolesTableSeeder
+        Seeder created successfully.
+
+----------------- EP6 Seed the roles and users tables -------------
+9- --php artisan make:seed UsersTableSeeder
+        Seeder created successfully.
+
+10- -- php artisan db:seed
+        Seeding: RolesTableSeeder
+        Seeded:  RolesTableSeeder (0.06 seconds)
+        Seeding: UsersTableSeeder
+        Seeded:  UsersTableSeeder (0.39 seconds)
+        Database seeding completed successfully.
