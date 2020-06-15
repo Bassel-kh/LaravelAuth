@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Bassel Khalil
+                    Bassel Khalil Master 2020
                 </div>
 
                 <div class="links">
