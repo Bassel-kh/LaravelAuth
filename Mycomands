@@ -89,4 +89,6 @@ install -------------------------
 
 ----------------- EP9 Using gates to control user access -----------
 
-12- 
+----------------- EP10 Hiding UI elements using gates --------------
+
+12- -- php artisan db:seed 
